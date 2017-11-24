@@ -10,6 +10,7 @@ class MovieDetail extends Component {
     return(
       <div className="wrapper">
         <h3>Movie Details: </h3>
+        <img src={this.props.movie.img}/>
         <div>Title: {this.props.movie.title}</div>
         <div>Score: {this.props.movie.score}</div>
         <div>Year: {this.props.movie.year}</div>
