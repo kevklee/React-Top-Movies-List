@@ -1,5 +1,45 @@
-$primary: #006699;
 
-h2 {
-	color: $primary;
+$color-primary: #F8E71C;
+
+* {
+  color: black;
+  background: $color-primary;
+}
+
+.main-div {
+  position: relative;
+  left: 200px;
+  top: 50px;
+}
+
+.movie-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  font-family: 'Montserrat', sans-serif;
+  z-index: 1;
+  position: relative;
+  left: 400px;
+  top: 110px;
+}
+
+.movie-details {
+  list-style-type: none;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.list-group col-sm-4 {
+  margin-top: 100px;
+}
+
+.list-group-item {
+  max-width: 300px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
 }

@@ -1,7 +1,6 @@
-export const selectUser = (user) => {
-  console.log("You clicked on user: ", user.first);
+export function selectMovie (movie) {
   return {
-    type: "USER_SELECTED",
-    payload: user
-  }
-};
+    type: 'MOVIE_SELECTED',
+    payload: movie
+  };
+}

@@ -1,17 +1,17 @@
 import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetail from '../containers/user-detail';
+import { Component } from 'react';
+require ('../../scss/style.scss');
 
-require('../../scss/style.scss');
+import MovieDetail from '../containers/movie_detail';
+import MovieList from '../containers/movie_list';
 
-const App = () => (
-  <div>
-      <h2>Username List:</h2>
-      <UserList />
-      <hr/>
-      <h2>User Details:</h2>
-      <UserDetail />
-  </div>
-);
-
-export default App;
+export default class App extends Component {
+  render() {
+    return (
+      <div className="main-div">
+        <MovieDetail />
+        <MovieList />
+      </div>
+    );
+  }
+}
